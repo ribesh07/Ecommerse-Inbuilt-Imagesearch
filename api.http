@@ -1,0 +1,8 @@
+
+
+  curl -i -X POST \
+  'http://localhost:8000/api/v1/admin/products/1/images' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3OTE4MTUzNDR9.3viFU3mQWbTBEW6gAKTieg-AY9UAh0mO9L8DrwUd1f8' \
+  -F 'image=@/home/guru/Pictures/pics/Img1.jpg;type=image/jpeg' \
+  -F 'replace_primary=false' \
+  -F 'alt_text=Product image'
